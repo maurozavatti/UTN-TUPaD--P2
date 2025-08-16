@@ -5,34 +5,31 @@ import java.util.Scanner;
 
 
 public class Ejercicio2 {
-    
-        public static void main(String[] args) {
-        // Declaramos input para leer los datos
-        Scanner input = new Scanner(System.in);
-        
-        // Declaramos variables
-        int numUno, numDos, numTres, mayor;
-        
-        // Le pedimos los numeros al usuario
-        System.out.println("Ingrese 3 numeros");
-        System.out.println("Primer numero: ");
-        numUno = Integer.parseInt(input.nextLine()); 
-        System.out.println("Segundo numero: ");
-        numDos = Integer.parseInt(input.nextLine()); 
-        System.out.println("Tercer numero: ");
-        numTres = Integer.parseInt(input.nextLine()); 
-        
-        mayor = numUno; // Iniciliamos mayor igualandolo a numUno
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       
 
-        if (numDos > mayor) { // Vericamos si numDos es mayor se guarda su valor
-            mayor = numDos;
-        } 
-        if (numTres > mayor) { // En el caso que num3 sea mayor se guarda su valor 
-            mayor = numTres;
+        System.out.print("Ingrese el primer número: ");
+            int num1 = scan.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+            int num2 = scan.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+             int num3 = scan.nextInt();
+
+        int mayor;
+
+        if (num1 >= num2 && num1 >= num3) {
+            mayor = num1;
+        } else if (num2 >= num1 && num2 >= num3) {
+            mayor = num2;
+        } else {
+            mayor = num3;
         }
-        
-        // Mostramos al mayor
+
         System.out.println("El mayor es: " + mayor);
-}
+        
+    }
         
 }

@@ -1,34 +1,35 @@
-
 package tp.pkg2.prog.estructurada.zavatti;
 
 import java.util.Scanner;
 
 public class Ejercicio6 {
+
     public static void main(String[] args) {
-        
         Scanner input = new Scanner(System.in);
-           
-        // Declaramos e iniciliamos contadores en 0, y declaramos num para alojar el numero del usuario
-        int contadorPositivos = 0, contadorNegativos = 0, contadorCeros = 0, num;
+
+        int positivos = 0;
+        int negativos = 0;
+        int ceros = 0;
 
         for (int i = 1; i <= 10; i++) {
-            System.out.print("Ingrese el numero " + i + ": ");
-            num = Integer.parseInt(input.nextLine());
-            
-            // Verificamos si es igual a 0, menor a 0 o mayor a 0
-            if(num > 0) {
-                contadorPositivos++; 
-            } else if (num < 0) {
-                contadorNegativos++;
-            } else if (num == 0){
-                contadorCeros++;
+            System.out.print("Ingrese el número " + i + ": ");
+            int numero = input.nextInt();
+
+            if (numero > 0) {
+                positivos++;
+            } else if (numero < 0) {
+                negativos++;
+            } else {
+                ceros++;
             }
         }
+
+        System.out.println("Resultados:");
+        System.out.println("Positivos: " + positivos);
+        System.out.println("Negativos: " + negativos);
+        System.out.println("Ceros: " + ceros);
+
         
-        System.out.println("Resultados");
-        System.out.print("Positivos: " + contadorPositivos + "\n");
-        System.out.print("Negativos: " + contadorNegativos + "\n");
-        System.out.println("Ceros: " + contadorCeros);
-        
-    } 
+    }
 }
+

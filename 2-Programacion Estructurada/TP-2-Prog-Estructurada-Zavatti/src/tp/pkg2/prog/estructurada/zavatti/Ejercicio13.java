@@ -1,42 +1,33 @@
-
 package tp.pkg2.prog.estructurada.zavatti;
 
 public class Ejercicio13 {
-        public static void main(String[] args) {
-        // Declaramos e inicializamos el array
+
+    public static void main(String[] args) {
+        // a. Declarar e inicializar un array con precios
         double[] precios = {199.99, 299.5, 149.75, 399.0, 89.99};
-        
-        // Mostramos los precios originales
+
+        // b. Mostrar precios originales usando recursión
         System.out.println("Precios originales:");
-        mostrarPreciosRecursivo(precios, 0);
-        
-        // Modificamos el precio de la posicion 2
+        imprimirArrayRecursivo(precios, 0);
+
+        // c. Modificar un precio específico (ej: el tercer elemento -> índice 2)
         precios[2] = 129.99;
 
-        // Mostramos los precios modificados
+        // d. Mostrar precios modificados usando recursión
         System.out.println("Precios modificados:");
-        mostrarPreciosRecursivo(precios, 0);
+        imprimirArrayRecursivo(precios, 0);
     }
-    
-    /**
-     * Muestra los precios de un arreglo de precios de manera recursiva.
-     *
-     * Esta función imprime los precios contenidos en el arreglo `precios`, uno
-     * por uno, en la consola. La recursividad se utiliza para iterar sobre cada
-     * elemento del arreglo.
-     *
-     * @param precios Un arreglo de tipo `double` que contiene los precios de
-     * los productos.
-     * @param indice Un índice entero que indica la posición actual en el
-     * arreglo. Debe ser 0 cuando se llama a la función por primera vez.
-     */
-    public static void mostrarPreciosRecursivo(double[] precios, int indice) {
-        // Si el índice es menor que la longitud del arreglo, continúa el proceso.
-        if (indice < precios.length) {
-            // Imprime el precio en la posición actual del arreglo.
-            System.out.println("Precio: $" + precios[indice]);
-            // Llama recursivamente a la función para imprimir el siguiente precio.
-            mostrarPreciosRecursivo(precios, indice + 1);
+
+    // Función recursiva para mostrar precios
+    public static void imprimirArrayRecursivo(double[] array, int indice) {
+        // Caso base: si llegamos al final, terminamos
+        if (indice >= array.length) {
+            return;
         }
+        // Mostrar el valor en la posición actual
+        System.out.println("Precio: $" + array[indice]);
+        // Llamada recursiva al siguiente índice
+        imprimirArrayRecursivo(array, indice + 1);
     }
 }
+
