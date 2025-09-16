@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>40</y><w>560</w><h>120</h></coordinates><panel_attributes>class Documento 
+--
+- titulo: String
+- contenido: String
+- firmaDigital: FirmaDigital
+--
++ Documento(titulo: String, contenido: String, codigoHash: String, fecha: String, usuario: Usuario)
++ toString(): String
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>250</y><w>390</w><h>120</h></coordinates><panel_attributes>class FirmaDigital 
+--
+- codigoHash: String
+- fecha: String
+- usuario: Usuario
+--
++ FirmaDigital(codigoHash: String, fecha: String, usuario: Usuario)
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>270</y><w>270</w><h>100</h></coordinates><panel_attributes>class Usuario 
+--
+- nombre: String
+- email: String
+--
++ Usuario(nombre: String, email: String)
++ toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>100</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>100</y><w>170</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+</panel_attributes><additional_attributes>10;10;140;10;140;150</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>150</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>

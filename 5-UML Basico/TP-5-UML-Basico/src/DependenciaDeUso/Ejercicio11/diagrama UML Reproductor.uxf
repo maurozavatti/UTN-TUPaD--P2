@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>420</x><y>60</y><w>110</w><h>70</h></coordinates><panel_attributes>class Cancion
+--
+- titulo: String
+- artista: Artista
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>210</y><w>280</w><h>70</h></coordinates><panel_attributes>class Artista
+--
+- nombre: String
+- genero: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>210</y><w>300</w><h>50</h></coordinates><panel_attributes>class Reproductor
+--
++ reproducir(c: Cancion): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>100</y><w>140</w><h>200</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>120;180;120;180</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>90</y><w>190</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>160;120;160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>80</y><w>200</w><h>150</h></coordinates><panel_attributes>lt=&lt;..
+&lt;&lt;call&gt;&gt;</panel_attributes><additional_attributes>10;130;10;20;180;20</additional_attributes></element></diagram>

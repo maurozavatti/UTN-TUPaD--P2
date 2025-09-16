@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>30</y><w>550</w><h>190</h></coordinates><panel_attributes>class TarjetaDeCredito 
+--
+- numero: String
+- fechaVencimiento: java.time.LocalDate
+- cliente: Cliente
+- banco: Banco
+--
++ TarjetaDeCredito(numero: String, fechaVencimiento: LocalDate, cliente: Cliente, banco: Banco)
++ getNumero(): String
++ getFechaVencimiento(): LocalDate
++ getCliente(): Cliente
++ getBanco(): Banco
++ toString(): String
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>40</y><w>270</w><h>170</h></coordinates><panel_attributes>class Cliente 
+--
+- nombre: String
+- dni: String
+- tarjeta: TarjetaDeCredito
+--
++ Cliente(nombre: String, dni: String)
++ getNombre(): String
++ getDni(): String
++ getTarjeta(): TarjetaDeCredito
++ setTarjeta(t: TarjetaDeCredito): void
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>300</y><w>270</w><h>130</h></coordinates><panel_attributes>class Banco 
+--
+- nombre: String
+- cuit: String
+--
++ Banco(nombre: String, cuit: String)
++ getNombre(): String
++ getCuit(): String
++ toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>210</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>90</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element></diagram>

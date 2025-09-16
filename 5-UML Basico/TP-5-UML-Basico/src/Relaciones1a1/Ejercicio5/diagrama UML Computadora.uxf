@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>30</y><w>640</w><h>190</h></coordinates><panel_attributes>class Computadora 
+--
+- marca: String
+- numeroSerie: String
+- placaMadre: PlacaMadre
+- propietario: Propietario
+--
++ Computadora(marca: String, numeroSerie: String, modeloPM: String, chipset: String, propietario: Propietario)
++ getMarca(): String
++ getNumeroSerie(): String
++ getPlacaMadre(): PlacaMadre
++ getPropietario(): Propietario
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>340</y><w>270</w><h>130</h></coordinates><panel_attributes>class PlacaMadre 
+--
+- modelo: String
+- chipset: String
+--
++ PlacaMadre(modelo: String, chipset: String)
++ getModelo(): String
++ getChipset(): String
++ toString(): String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>350</y><w>270</w><h>180</h></coordinates><panel_attributes>class Propietario 
+--
+- nombre: String
+- dni: String
+- computadora: Computadora
+--
++ Propietario(nombre: String, dni: String)
++ getNombre(): String
++ getDni(): String
++ getComputadora(): Computadora
++ setComputadora(c: Computadora): void
++ toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>90</y><w>70</w><h>340</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>50;320;50;320</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>210</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1
+</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>210</y><w>40</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element></diagram>
