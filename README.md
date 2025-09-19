@@ -6,8 +6,7 @@ Tecnicatura Universitaria en Programación
 
 Nombre: Mauro Zavatti
 Comisión: M2025-18
-📂 Descripción del Repositorio
-Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de Programación 2.
+📂 Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de Programación 2.
 
 📌 Estructura del repositorio:
 
